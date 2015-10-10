@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie6" lang="zh-TW"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="zh-TW"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js lt-ie9 ie8" lang="zh-TW"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="zh-TW"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="zh-TW"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>"UNI water秋季瓶標徵選</title>
+        <meta name="keywords" content="">
+		<meta name="description" content="">
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta name="viewport" content="width=980">
+		<!-- <meta name="viewport" content="width=device-width"> -->
+  		<link href="css/all.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="./js/libs/html5shiv.min.js"></script>
+		<script type="text/javascript" src="./js/libs/device.min.js"></script>
+		<script type="text/javascript">
+		var a = 'u';
+		</script>
+	</head>
+	<body>
+	
+		<div class="loading"><div class="pic abs"></div></div>
+		<div class="wrapper">
+			<header class="site-header">
+				<h1 class="site-logo"><img src="images/logo.png"></h1>
+				<a href="#" class="btn-open"><img src="images/nav_btn_open.png"></a>
+				<div class="shadow"></div>
+			</header>
+			<!-- end of header-->		
+			<div class="u1">
+				<div class="draw_btn" onclick="location.href='draw.html'; GT('upload_m','clk','start');"><img src="images/draw_btn.png"></div>
+				<div class="down_btn" onclick="outlink('ai');GT('upload_m','clk','download');"><img src="images/down_btn.png"></div>
+				<div class="up_btn" onclick="GT('upload_m','clk','upload');"><img src="images/up_btn.png">
+					<form class="pic_form" id="pic_form" name="pic_form" enctype="multipart/form-data">
+	                    <input type="file" id="upload_img"  name="upload_img" accept="image/*" >
+	                    <input type='hidden' name='fb_id'>
+	                </form>
+				</div>
+				<div class="rule_btn" onclick="outlink('rule')"></div>
+				<div class="rule_btn2" onclick="outlink('rule')"></div>
+			</div>
+			<div class="u4">
+				<div class="preview_img"><img src=""></div>	
+				<div class="preview" ><img src="images/prev.png"></div>
+				<div class="color color_u">
+                    <div class="cr cc" color="a84f55"><div></div><span style="color:#a84f55">甜酒紅</span></div>
+                    <div class="cg cc" color="a3aa83"><div></div><span style="color:#a3aa83">香草綠</span></div>
+                    <div class="cy cc" color="e8bb5a"><div></div><span style="color:#e8bb5a">橡木黃</span></div>
+                    <div class="cp cc" color="d0a1ba"><div></div><span style="color:#d0a1ba">喀什米爾粉</span></div>
+                    <div style="clear:left"></div>
+                </div>
+                <div class="draw_form2">
+                    <form class="q-text2" id="q-text2" name="q-text2">
+                        <input type="text" name="work_name" class="textstyle">
+                        <textarea type="text" name="work_dis" class="work_dis"></textarea>
+                        <input type='hidden' name='img_name'>
+                    </form>
+                    <div class="local_send" onclick="checkStep1form2();"><img src="images/send_btn.png"></div>
+                </div>
+			</div>
+			<div class="u3" style="top: 180px"><img src="images/u3.png">
+            	<div class="rule_btn3" onclick="outlink('rule');"></div>
+            	<div class="draw_form3">
+                    <form class="q-text3" id="q-text3" name="q-text3">
+                        <input type="text" id="name" name="name" maxlength="20" class="textstyle"/>
+                        <input type="text" id="tel" name="tel" maxlength="10" class="textstyle"/>
+                        <input type="text" id="email" name="email" maxlength="50" class="textstyle"/>
+                        <input type="checkbox" name="readRule" id="readRule">
+                        <input type='hidden' name='img_name'>
+                        <input type='hidden' name='work_describe'>
+                        <input type='hidden' name='work_name'>
+                        <input type='hidden' name='upload_way'>
+                    </form>
+                <div class="rule_btn4" onclick="outlink('rule')"></div>
+                <div class="rule_btn5" onclick="outlink('rule')"></div>
+                <div class="info_btn" onclick="checkStep1form3();"><img src="images/send_btn.png"></div>
+            </div>
+            </div>
+			<div class="prev_cover">
+				<div class="prevbox">
+					<div class="prevp"><img src=""></div>
+				</div>
+				<div class="prev_close"><img src="images/X.png"></div>
+			</div>	
+			<!-- end of content-->
+
+			<footer class="site-footer">
+				<h2 class="logo-left"><img src="images/logo2.png"></h2>
+				<h2 class="logo-right"><img src="images/logo3.png"></h2>
+				<p>
+					本網站內容均受著作權法保障，除非有特別聲明，<br>
+					其著作權屬於統一企業(股)公司或其他內容提供者所有，<br>
+					請勿將全部或部分圖文內容轉載於任何形式媒體<br>
+					Copyright© 2014 Uni-President Enterprises Corp.,<br>
+					All rights reserved.
+				</p>
+			</footer>
+			<!-- end of footer-->
+			
+		</div>
+		<!-- end of wrapper-->
+		
+		<nav class="site-nav">
+			<ul>
+				<li class="b1"><a href="index.html"></a></li>
+				<li class="b2"><a href="#" onclick="location.href='upload.html'"></a></li>
+				<li class="b3"><a href="#" onclick="location.href='list.html'";></a></li>
+				<li class="b4"><a href="rules.html"></a></li>
+			</ul>
+		</nav>
+		<!-- end of nav-->
+			
+  		<script type="text/javascript" src="./js/libs/jquery-1.8.2.min.js"></script>
+  		<script type="text/javascript" src="./js/libs/plugins.js"></script>
+  		<script type="text/javascript" src="script/jquery.form.min.js" ></script>
+  		<script type="text/javascript" src="./js/libs/mat.GAUtil.js"></script>
+  		<script type="text/javascript" src="./js/main.js"></script>
+  		<script type="text/javascript" src="./js/fb.js"></script>
+  		<script type="text/javascript" src="./js/tracking.js"></script>
+	</body>
+	<script type="text/javascript">
+	$(document).on('change', '#upload_img', function(event){
+    if (!$("#pic_form input[name= 'upload_img']").val())return;
+        //
+        fileclick();
+    });
+    $('.preview').on('click',function(){
+    	if($('.color').attr('color') == undefined){
+    		alert('請選擇平身顏色喔！')
+    	}else{
+    		$('.prev_cover').show(); 
+    	}
+        
+    });
+    $('.prev_close').on('click',function(){
+        $(this).parent().hide();
+    });
+    $('.color .cc').click(function(){
+        $(this).css({'border-bottom': 5+'px solid #'+$(this).attr('color')})
+        $('.prevbox').css('background','url(images/p'+$(this).attr('color')+'.png)');
+        $(this).siblings().removeAttr('style');
+        $(this).parent().attr('color',$(this).attr('color'));    
+    });
+	function fileclick(){
+	//KK ====================================================
+	$('#q-text3  input[name = "upload_way"]').val("file");
+	//KK ====================================================
+    $("#pic_form").ajaxForm({
+        type:"post",
+        url:"//uni-water.campaigns.com.tw/uni_water/api/image_file_upload", 
+        dataType:"json",
+        success:function(pResponse){
+            if (pResponse.state==1) {
+                $('.u1').hide();
+                $('.u4').fadeIn();
+                $('.preview_img img').attr('src','//uni-water.campaigns.com.tw/uni_water/uploads/'+pResponse.img_name);
+                $('.prevp img').attr('src','//uni-water.campaigns.com.tw/uni_water/uploads/'+pResponse.img_name);
+                $('#q-text2  input[name = "img_name"]').val(pResponse.img_name);
+				//KK ====================================================
+                $('#q-text3  input[name = "img_name"]').val(pResponse.img_name);
+				//KK ====================================================
+            }else if(pResponse.state==3){
+                alert('圖片大小超出限制了');
+            }else if(pResponse.state==4){
+                alert('檔案超過2M了~><');
+            }else if(pResponse.state==5){
+                alert('圖檔格式不對喔！');
+            }else{
+                alert("忙碌中。請稍後再試！(error)");
+                $('.updatepicPloading').fadeOut();
+            }
+
+        },
+        error:function(pResponse){
+            window.alert("伺服器忙碌中。請稍後再試 (error)");
+           }
+    }).submit();
+    
+}
+function checkStep1form2() {
+    work_name = $("#q-text2 input[name= 'work_name']");
+    work_dis = $("#q-text2 textarea[name= 'work_dis']");
+    if ($('.color').attr('color') == undefined){
+        alert("請選擇你的瓶身");
+        work_name.focus();
+        return false;
+    }else if (work_name.val() == ""){
+        alert("請寫下你的作品名稱喔");
+        work_name.focus();
+        return false;
+    } else if ( work_dis.val() == ""){
+        alert("請寫下你的創作理念喔");
+        work_dis.focus();
+        return false;
+    }
+    if($('.color').attr('color') == 'a84f55'){
+        cc = 'r';
+    }
+    if($('.color').attr('color') == 'a3aa83'){
+        cc = 'g';
+    }
+    if($('.color').attr('color') == 'e8bb5a'){
+        cc = 'y';
+    }
+    if($('.color').attr('color') == 'd0a1ba'){
+        cc = 'p';
+    }
+    fb_login('local');
+   
+    //showAlert();
+    return true;
+}
+function sendData2() {
+    //GT('upload','clk','u_done');
+    //console.log($('#q-text2  input[name = "img_name"]').val(),FB_ID,cc,work_name.val(),work_dis.val());
+	//KK ====================================================
+	upload_way = $('#q-text3  input[name = "upload_way"]').val();
+	if(upload_way == "file")
+	{
+		// $('.fans').show();
+		$('.u3').fadeIn();
+		$('html,body').animate({'scrollTop': 0},10);
+		$('#q-text3  input[name = "work_describe"]').val($('#q-text2  textarea[name = "work_dis"]').val());
+		$('#q-text3  input[name = "work_name"]').val($('#q-text2  input[name = "work_name"]').val());
+		clearForm2();
+	}
+	else
+	{
+		$.ajax({
+			url:' //uni-water.campaigns.com.tw/uni_water/api/image_base64_upload',
+			type: 'POST',
+			data: {
+				online_draw: $('#q-text2  input[name = "img_name"]').val(),
+				fb_id: FB_ID,
+				category: cc,
+				work_name: work_name.val(),
+				work_describe: work_dis.val(),
+			},
+			dataType: "json",
+				success: function(Jdata){
+					if(Jdata.state == 1){
+						alert('上傳成功');
+						 $('.info').show();
+                        //$('.fans').show();
+						$('.fans_cover').fadeIn();
+						$('#q-text3  input[name = "img_name"]').val(Jdata.img_name);
+						$('#q-text3  input[name = "work_describe"]').val(Jdata.work_describe);
+						$('#q-text3  input[name = "work_name"]').val(Jdata.work_name);
+					}else{
+						alert("忙碌中。請稍後再試 (error)");
+					}
+					 clearForm2();
+
+				}
+			}).done(function() {
+			   
+			});		
+	}
+	//KK ====================================================
+    }
+function clearForm2() {
+    $("#q-text2 input[name= 'work_name']").val('');
+    $("#q-text2 textarea[name= 'work_dis']").val('');
+}
+
+//信箱格式判斷
+function checkEmail(email) {
+    EmailCheck = new RegExp(/^([a-zA-Z0-9]+)([\.\-\_]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\.[a-zA-Z0-9\_\-]+)+$/)
+    if (EmailCheck.test(email)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function ValidEmail(emailtoCheck) {
+    // 規則: 1.只有一個 "@"
+    //       2.網址中, 至少要有一個".", 且不能連續出現
+    //       3.不能有空白和,
+
+    var regExp = /^[^@^\s^,]+@[^\.@^\s^,]+(\.[^\.@^\s^,]+)+$/;
+    if (emailtoCheck.match(regExp))
+        return true;
+    else
+        return false;
+}
+function checkStep1form3() {
+    pname = $("#q-text3 input[name= 'name']");
+    ptel = $("#q-text3 input[name= 'tel']");
+    pemail = $("#q-text3 input[name= 'email']");
+    var cellphone = /^09[0-9]{8}$/;
+
+    if (pname.val() == ""){
+        alert("請填入名字!");
+        pname.focus();
+        return false;
+    } else if (ptel.val() == "" ){
+        alert("請填入手機!");
+        ptel.focus();
+        return false;
+    } else if (!cellphone.test(ptel.val())) {
+        alert("請填入正確的手機!");
+        ptel.focus();
+        return false;
+    } else if (pemail.val() == "") {
+        alert("請填入E-mail!");
+        pemail.focus();
+        return false;
+    } else if (!checkEmail( pemail.val())) {
+        alert(" 請填入正確的E-mail!");
+        pemail.focus();
+        return false;
+    } else if (!document.getElementById("readRule").checked) {
+        alert("請勾選 閱讀並同意 個資法條款 與 活動辦法");
+        document.getElementById("readRule").focus();
+        return false;
+    }
+    if($('.color').attr('color') == 'a84f55'){
+        cc = 'r';
+    }
+    if($('.color').attr('color') == 'a3aa83'){
+        cc = 'g';
+    }
+    if($('.color').attr('color') == 'e8bb5a'){
+        cc = 'y';
+    }
+    if($('.color').attr('color') == 'd0a1ba'){
+        cc = 'p';
+    }
+
+    if($('.upload_l .color').attr('color') == 'a84f55'){
+        cc = 'r';
+    }
+    if($('.upload_l .color').attr('color') == 'a3aa83'){
+        cc = 'g';
+    }
+    if($('.upload_l .color').attr('color') == 'e8bb5a'){
+        cc = 'y';
+    }
+    if($('.upload_l .color').attr('color') == 'd0a1ba'){
+        cc = 'p';
+    }
+
+    sendData3();
+    //showAlert();
+    return true;
+}
+
+//102
+function sendData3(cuId,arrayc) {
+    //GT('upload','clk',a+'_info');
+      $.ajax({
+        url:' //uni-water.campaigns.com.tw/uni_water/api/work_upload',
+        type: 'POST',
+        data: {
+            fb_id: FB_ID,
+            category: cc,
+            work_name: $('#q-text3  input[name = "work_name"]').val(),
+            work_describe: $('#q-text3  input[name = "work_describe"]').val(),
+            img_name: $('#q-text3  input[name = "img_name"]').val(),
+            is_name: pname.val(),
+            is_email: pemail.val(),
+            is_tel: ptel.val()
+        },
+        dataType: "json",
+            success: function(Jdata){
+                if(Jdata.state == 1){
+                    alert('上傳成功');
+                    ui_post(Jdata.merge_img_name);
+                }else{
+                    alert("忙碌中。請稍後再試 (error)");
+                }
+                 clearForm3();
+            }
+        }).done(function() {
+           
+        });
+    }
+function clearForm3() {
+    $('.openbottom input[name= "score"]:checked').removeAttr('checked');
+    $("#q-text3 input[name= 'name']").val('');
+    $("#q-text3 input[name= 'tel']").val('');
+    $("#q-text3 input[name= 'email']").val('');
+}
+	</script>
+</html>
+

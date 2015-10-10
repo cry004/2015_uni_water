@@ -1,0 +1,874 @@
+.wrapper
+	width: $full
+	height: $full
+	position: absolute
+	top: 0
+	left: 0
+	overflow: hidden
+	background: #fff
+	.bg2
+		position: absolute
+		width: 100%
+		left: 50%
+		display: none
+		img
+			width: 100%
+	.index_bg
+		background: #19a4c9
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 20%
+		div img
+			width: 100%
+		.bg1
+			position: absolute
+			left: 0%
+			bottom: 100%
+			width: 100%
+		.index_pd
+			position: absolute
+			right: 42.3%
+			width: 7.55%
+			top: 100%
+		.h1
+			position: absolute
+			left: 30.5%
+			width: 19.22%
+			display: none
+			img
+				margin-top: 60%
+		.h2
+			position: absolute
+			left: 31%
+			width: 18.02%
+			display: none
+			img
+				margin-left: -40%
+		.h3
+			position: absolute
+			left: 58.5%
+			width: 14.32%
+			display: none
+			img
+				margin-left: 40%
+		.btn_start
+			position: absolute
+			left: 58.5%
+			width: 8.13%
+			display: none
+			cursor: pointer
+			z-index: 1
+			&:hover>.b_o
+				display: none
+			img
+				position: absolute
+				margin-top: 20%
+				top: 0
+				left: 0
+			.b_o
+		.btn_start.animate
+			@include animation(btn_start 1s infinite)
+		.btn_rule
+			position: absolute
+			left: 67.5%
+			width: 6.7%
+			top: 9px
+			cursor: pointer
+			z-index: 1
+			display: none
+	.bg1cover1
+		width: 53.9%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background: #fff
+		@include  box-shadow(0px 0px 194px 129px white)
+	.bg1cover2
+		width: 46.1%
+		height: 100%
+		position: absolute
+		right: 0
+		top: 0
+		background: #fff
+		@include  box-shadow(0px 0px 194px 129px white)
+	.content
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		div
+			height: 14%
+			display: none
+		div img
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			&:first-child
+				width: 100%	
+				display: none
+			&:nth-child(2)
+				width: 90%
+		.bc1
+			position: absolute
+			left: 2.75%
+			top: 29%
+			width: 6.5%
+		.bc2
+			position: absolute
+			left: 9.05%
+			top: 10%
+			width: 6.5%	
+		.bc3
+			position: absolute
+			left: 13.05%
+			top: 33%
+			width: 6.5%
+		.bc4
+			position: absolute
+			left: 22.05%
+			top: 19%
+			width: 6.5%
+		.bc5
+			position: absolute
+			left: 26.05%
+			top: 38%
+			width: 6.8%
+		.bc6
+			position: absolute
+			left: 36.05%
+			top: 25%
+			width: 10%
+		.bc7
+			position: absolute
+			left: 43.05%
+			top: 49%
+			width: 9%
+		.bc8
+			position: absolute
+			left: 49.8%
+			top: 12%
+			width: 10%
+		.bc9
+			position: absolute
+			left: 55.05%
+			top: 42%
+			width: 9.5%
+		.bc10
+			position: absolute
+			left: 63.05%
+			top: 7%
+			width: 6.5%
+		.bc11
+			position: absolute
+			left: 67.5%
+			top: 28%
+			width: 7%
+		.bc12
+			position: absolute
+			left: 76.5%
+			top: 14%
+			width: 6%
+		.bc13
+			position: absolute
+			left: 79.8%
+			top: 33%
+			width: 7%
+		.bc14
+			position: absolute
+			left: 88%
+			top: 18%
+			width: 6.8%
+	.cover_all
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0,.5)
+		position: absolute
+		top: 0
+		left: 0
+		display: none
+		z-index: 1
+	.menu
+		width: 221px
+		height: 100%
+		position: absolute
+		left: -221px
+		top: 0
+		background: #f3f3f3
+		@include transition(all,0.4s,0s,ease-in-out)
+		z-index: 1
+	.menu.show
+		left: -123px
+		&:hover
+			left: 0
+	.logo
+		width: 27.6%
+		position: absolute
+		top: 2%
+		right: 8%
+		img
+			width: 100%
+	.navbox
+		position: absolute
+		right: 15%
+		top: 12%
+		width: 100%
+		height: 100%
+		.nav 
+			text-align: right
+			width: 100%
+			height: 35px
+			position: absolute
+			right: 0
+			cursor: pointer
+			&:hover>.navpic
+				background-position: -35px 0
+			div
+				width: 35px
+				height: 35px
+				position: absolute
+				top: 0
+				right: 0
+			span
+				position: relative
+				margin-right: 65px
+				@include Font(normal,14px,35px,'微軟正黑體')
+		.nav1
+			top: 0
+			& .navpic
+				@include Background('../img/nav1.jpg',0 0, no-repeat)
+			&:hover>span
+				color: #19a4c9
+		.nav2
+			top: 70px
+			& .navpic
+				@include Background('../img/nav2.jpg',0 0, no-repeat)
+			&:hover>span
+				color: #a84f55
+		.nav3
+			top: 140px
+			& .navpic
+				@include Background('../img/nav3.jpg',0 0, no-repeat)
+			&:hover>span
+				color: #ef858c
+		.nav4
+			top: 210px
+			& .navpic
+				@include Background('../img/nav4.jpg',0 0, no-repeat)
+			&:hover>span
+				color: #77c7c4
+	.footer
+		width: 100%
+		background: #fff
+		position: absolute
+		bottom: 0
+		left: 0
+		z-index: 1
+		.footer_pic
+			height: 100%
+			@include Margin(0,auto,0,auto)
+			position: relative
+		img
+			width: 100%
+			margin: auto
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+		.logo_l
+			width: 7%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+			cursor: pointer
+		.logo_r
+			width: 10%
+			height: 100%
+			position: absolute
+			right: 0
+			top: 0
+			cursor: pointer
+	
+	.upbg
+		width: 100%
+		position: absolute
+		top: -25%
+		left: 50%
+		margin-left: -857px
+	.downbg		
+		width: 100%
+		position: absolute
+		bottom: -8%
+		left: 0
+		img
+			width: 100%
+	.upload_step1
+		width: 649px
+		height: 502px
+		@include Background('../img/upload_bg1.png',0 0, no-repeat)
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		margin: auto
+		.draw_start
+			position: absolute
+			left: 98px
+			top: 254px
+			cursor: pointer
+		.download_ai
+			position: absolute
+			left: 400px
+			top: 202px
+			cursor: pointer
+		.upload_local
+			position: absolute
+			left: 400px
+			top: 254px
+			cursor: pointer
+			#upload_img
+				width: 182px 
+				height: 36px 
+				position: absolute 
+				right: 0 
+				top: 0 
+				font-size: 0 
+				cursor: pointer 
+				overflow: hidden 
+				opacity: 0
+		.eventrule1
+			@extend %eventrule
+			left: 302px
+			bottom: 99px
+		.eventrule2
+			@extend %eventrule
+			left: 269px
+			bottom: 36px
+	.upload_draw,.upload_l
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		display: none
+	.preview_img
+		width: 229px
+		height: 449px
+		position: absolute
+		top: 308px
+		left: 267px
+		img
+			width: 100%
+	.pd_zoom
+		width: 980px
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		margin: auto	
+		.u_logo
+			position: absolute
+			top: 0
+			left: 228px
+		#myCanvas
+			position: absolute
+			left: 266px
+			top: 308px
+			cursor: crosshair
+		.draw_tool
+			position: absolute
+			top: 780px
+			left: 299px
+			.prestep
+				position: absolute
+				top: 0
+				left: 0
+				cursor: pointer
+			.nextstep
+				position: absolute
+				top: 0
+				left: 50px
+				cursor: pointer
+			.restart
+				position: absolute
+				top: 0
+				left: 100px
+				cursor: pointer
+			.preview
+				position: absolute
+				top: 0
+				left: 150px
+				cursor: pointer
+		.to_form
+			width: 29px
+			height: 545px
+			position: absolute
+			top: 303px
+			left: 499px
+			@include Background('../img/to_form.png',0 0, no-repeat)
+		.draw_form
+			width: 462px
+			height: 509px
+			position: absolute
+			top: 313px
+			left: 528px
+			@include Background('../img/draw_form.png',0 0, no-repeat)
+			.strokes
+				position: absolute
+				top: 89px
+				left: 118px
+				font: normal 16px/24px 'Arial'
+				#thickness
+					position: absolute
+					left: 38px
+					top: 0
+					width: 200px
+			.draw_btn
+				position: absolute
+				bottom: 33px
+				left: 120px
+				cursor: pointer
+		.draw_form2
+			width: 426px
+			height: 509px
+			position: absolute
+			top: 314px
+			left: 528px
+			@include Background('../img/draw_form2.png',0 0, no-repeat)
+			.draw_btn
+				position: absolute
+				bottom: 37px
+				left: 120px
+				cursor: pointer
+		.color
+			position: absolute
+			left: 106px
+			top: 130px
+			div
+				width: 70px
+				height: 60px
+				float: left
+				position: relative
+				text-align: center
+				div
+					position: relative
+					left: 20px
+					width: 30px
+					height: 30px
+					background: #f00
+					border-radius: 50%
+					cursor: pointer
+				span
+					display: block
+					position: relative
+					margin-top: 40px
+					width: 100%
+					text-align: center
+					font: normal 14px/24px '微軟正黑體'
+			.cr
+				div
+					background: #a84f55
+				span
+					color: #a84f55
+			.cg
+				div
+					background: #a3aa83
+				span
+					color: #a3aa83
+			.cy
+				div
+					background: #e8bb5a
+				span
+					color: #e8bb5a
+			.cp
+				div
+					background: #d0a1ba
+				span
+					color: #d0a1ba
+		#q-text
+			position: absolute
+			top: 249px
+			left: 121px
+			.work_dis
+				width: 260px
+				height: 127px
+				font: normal 16px/16px '微軟正黑體'
+				background: transparent
+				outline: 0
+				border: 0
+				position: absolute
+				left: 0
+				top: 45px
+		#q-text2
+			position: absolute
+			top: 210px
+			left: 121px
+			.work_dis
+				width: 260px
+				height: 160px
+				font: normal 16px/16px '微軟正黑體'
+				background: transparent
+				outline: 0
+				border: 0
+				position: absolute
+				left: 0
+				top: 45px
+	.textstyle
+		width: 260px
+		height: 20px
+		font: normal 16px/16px '微軟正黑體'
+		background: transparent
+		outline: 0
+		border: 0
+		position: absolute
+		left: 0		
+	.preview_cover
+		width: 100%
+		height: 100%
+		background: rgba(255,255,255,.9)
+		position: absolute
+		top: 0
+		left: 0
+		display: none
+		.preview_pd
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			margin: auto
+			width: 218px
+			height: 643px
+		.preview_close
+			position: absolute
+			top: 20%
+			right: 20%
+			cursor: pointer
+			span
+				position: relative
+				top: -2px
+				right: 9px
+				font: normal 20px/20px '微軟正黑體'
+		.preview_canvas
+			position: absolute
+			left: 78px
+			top: 308px
+			width: 55px
+			img
+				width: 100%
+	.fans_cover
+		width: 100%
+		height: 100%
+		background: rgba(255,255,255,.9)
+		position: absolute
+		top: 0
+		left: 0
+		display: none
+		.fans
+			width: 345px
+			height: 289px
+			@include Background('../img/fans.png',0 0, no-repeat)
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			margin: auto
+			display: none
+			.fb-page
+				position: absolute
+				left: 34px
+				top: 148px
+			.fans_close
+				position: absolute
+				right: 7px
+				top: 0px
+				width: 25px
+				height: 25px
+				cursor: pointer
+		.info
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			display: none
+			.draw_form3
+				width: 426px
+				height: 382px
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				margin: auto
+				@include Background('../img/draw_form3.png',0 0, no-repeat)
+				#q-text3
+					position: absolute
+					top: 152px
+					left: 121px
+				#name
+					top: 0
+				#tel
+					top: 41px
+				#email
+					top: 88px
+				#readRule
+					width: 15px
+					height: 15px
+					position: absolute
+					left: 0px
+					top: 129px
+				.eventrule3
+					width: 53px
+					height: 20px
+					position: absolute
+					cursor: pointer
+					left: 66px
+					top: 115px
+				.eventrule4
+					width: 70px
+					height: 20px
+					position: absolute
+					cursor: pointer
+					right: 115px
+					top: 279px
+				.eventrule5
+					width: 60px
+					height: 20px
+					position: absolute
+					cursor: pointer
+					right: 43px
+					top: 278px
+				.info_btn
+					position: absolute
+					cursor: pointer
+					right: 41px
+					top: 321px
+			.pdl
+				width: 269px
+				height: 568px
+				@include Background('../img/pdl.png',0 0, no-repeat)
+				position: absolute
+				left: 25.5%
+				bottom: -73px
+			.pdr
+				width: 278px
+				height: 572px
+				@include Background('../img/pdr.png',0 0, no-repeat)
+				position: absolute
+				right: 25.9%
+				bottom: -33px
+	.list_content
+		//width: 1120px
+		position: relative
+		margin: 0 auto
+		.work
+			position: relative
+			width: 218px
+			height: 643px
+			padding: 0 30px
+			float: left
+			cursor: pointer
+			&:nth-child(even)>.workbg
+				margin-top: -150px
+			.workbg
+				position: relative
+				width: 218px
+				height: 643px
+				@include Background('',50% 0, no-repeat)
+			.workpic
+				width: 55px
+				height: 107px
+				position: absolute
+				left: 78px
+				top: 308px
+				img
+					width: 100%
+			.vote_info
+				width: 200px
+				height: 98px
+				@include Background('../img/vote_info.png',50% 0, no-repeat)
+				position: absolute
+				bottom: 102px
+				left: 1px
+				font: normal 12px/12px '微軟正黑體'
+				div
+					position: absolute
+				.v_name
+					width: 75px
+					top: 27px
+					left: 47px
+					overflow: hidden
+				.v_tit
+					top: 48px
+					left: 47px
+					width: 75px
+					overflow: hidden
+				.v_count
+					position: absolute
+					top: 72px
+					left: 47px
+				.vote_btn
+					width: 66px
+					height: 66px
+					@include Background('../img/vote_btn.png',50% 0, no-repeat)
+					position: absolute
+					bottom: 9px
+					right: 7px
+					cursor: pointer
+	.filter
+		width: 100%
+		height: 70px
+		background: #ef858c
+		position: fixed
+		top: 0
+		left: 0
+		.search_way
+			position: absolute
+			top: 21px
+			left: 123px
+		.by_date
+			position: absolute
+			top: 25px
+			left: 311px
+			cursor: pointer
+		.by_vote
+			position: absolute
+			top: 25px
+			left: 230px
+			cursor: pointer
+		.by_color
+			position: absolute
+			top: 25px
+			left: 418px
+			font: bolder 14px/20px '微軟正黑體'
+			ul
+				position: relative
+				left: 43px
+				top: -23px
+				li 
+					float: left
+					margin-left: 10px
+					div 
+						width: 30px
+						height: 30px
+						border-radius: 50%
+						cursor: pointer
+					&:first-child div
+						background: #a84f55
+					&:nth-child(2) div
+						background: #a3aa83
+					&:nth-child(3) div
+						background: #e8bb5a
+					&:nth-child(4) div
+						background: #d0a1ba
+		.by_type
+			position: absolute
+			right: 26px
+			top: 21px
+		.updater
+			width: 111px
+			height: 23px
+			position: absolute
+			left: 100px
+			top: 4px
+			font: normal 16px/16px '微軟正黑體'
+			background: transparent
+			outline: 0
+			border: 0
+		.searchbtn
+			position: absolute
+			left: 216px
+			top: 3px
+			width: 31px
+			height: 31px
+			cursor: pointer
+
+	.vote_cover
+		width: 100%
+		height: 100%
+		background: rgba(255,255,255,.9)
+		position: fixed
+		top: 0
+		left: 0
+		display: none
+		.vote_bg
+			width: 736px
+			height: 509px
+			@include Background('../img/vote_bg.png',50% 0, no-repeat)
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			margin: auto
+			font: normal 14px/20px '微軟正黑體'
+			.vote_pic
+				width: 229px
+				position: absolute
+				left: 112px
+				top: 26px
+				img
+					width: 100%
+			.vote_name
+				position: absolute
+				left: 483px
+				top: 35px
+			.vote_work
+				position: absolute
+				left: 483px
+				top: 80px
+			.vote_des
+				position: absolute
+				left: 396px
+				top: 165px
+				width: 294px
+			.vote_rate
+				position: absolute
+				left: 483px
+				top: 450px
+				font: normal 21px/20px '微軟正黑體'
+				color: #e4007f
+			.vote_b
+				position: absolute
+				right: 32px
+				top: 415px
+				cursor: pointer
+			.vote_close
+				position: absolute
+				right: 8px
+				top: 0
+				cursor: pointer
+	.rule
+		position: relative
+		margin: 0 auto
+		width: 838px
+		height: 2211px
+		padding-bottom: 80px
+		@include Background('../img/rule.png',50% 0, no-repeat)
+	.bg_r
+		position: absolute
+		top: 0
+		left: 50%
+		width: 72%
+		margin-left: -37%
+		img
+			width: 100%
+	.zip
+		width: 42px
+		height: 20px
+		position: absolute
+		top: 795px
+		left: 381px
+		cursor: pointer

@@ -1,0 +1,2293 @@
+@charset "UTF-8";
+/* line 5, ../../../../../Download/fire.app.windows.v1.13.1/fire.app/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Download/fire.app.windows.v1.13.1/fire.app/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Download/fire.app.windows.v1.13.1/fire.app/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Download/fire.app.windows.v1.13.1/fire.app/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Download/fire.app.windows.v1.13.1/fire.app/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Download/fire.app.windows.v1.13.1/fire.app/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Download/fire.app.windows.v1.13.1/fire.app/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Download/fire.app.windows.v1.13.1/fire.app/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Download/fire.app.windows.v1.13.1/fire.app/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_extend.sass */
+.wrapper .story .set .votes span, .cover .openpic .openpicV span {
+  position: absolute;
+  left: 60px;
+  top: 36px;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Arial";
+  line-height: 20px;
+  width: 48px;
+  text-align: center;
+}
+
+/* line 8, ../sass/_extend.sass */
+.cover .openpic .openpicC, .cover .updatepic .updatepicC, .cover .pages .pagesC, .cover .persondata .persondataC, .cover .persondata2 .persondataC {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/_base.sass */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 4, ../sass/_base.sass */
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  min-height: 630px;
+  position: relative;
+  font-family: Arial, "微軟正黑體";
+  background: #000;
+}
+
+/* line 12, ../sass/_base.sass */
+a {
+  text-decorate: none;
+}
+
+/*img
+ * width: $full */
+/* line 16, ../sass/_base.sass */
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/* line 22, ../sass/_base.sass */
+.loading .loadingbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #f2d719;
+}
+/* line 29, ../sass/_base.sass */
+.loading .loadingicon {
+  position: absolute;
+  width: 147px;
+  height: 120px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  text-align: center;
+}
+/* line 39, ../sass/_base.sass */
+.loading .loadingicon .loadingpic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/loading.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -moz-animation: loading 0.8s steps(2) infinite;
+  -webkit-animation: loading 0.8s steps(2) infinite;
+  animation: loading 0.8s steps(2) infinite;
+}
+/* line 45, ../sass/_base.sass */
+.loading .loadingicon .percent {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Arial";
+  line-height: 28px;
+  position: relative;
+  margin: 137px auto;
+}
+
+/* line 1, ../sass/_main.sass */
+.wrapper {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 6, ../sass/_main.sass */
+.wrapper .kvSec {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: #f2d719;
+}
+/* line 13, ../sass/_main.sass */
+.wrapper .kvSec .head {
+  position: relative;
+  top: -138px;
+  width: 100%;
+  height: 138px;
+  background-image: url("../img/headbg.gif");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  -webkit-transition: all 0.1s 0.3s linear;
+  -moz-transition: all 0.1s 0.3s method;
+  -ms-transition: all 0.1s 0.3s linear;
+  -o-transition: all 0.1s 0.3s linear;
+  transition: all 0.1s 0.3s linear;
+}
+/* line 20, ../sass/_main.sass */
+.wrapper .kvSec .head .logo {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  cursor: pointer;
+}
+/* line 24, ../sass/_main.sass */
+.wrapper .kvSec .head .logo img {
+  width: 180px;
+  height: 51px;
+}
+/* line 28, ../sass/_main.sass */
+.wrapper .kvSec .head .menu {
+  width: 814px;
+  position: relative;
+  margin-top: 75px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+/* line 32, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul {
+  position: absolute;
+  top: 0;
+}
+/* line 35, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:first-child {
+  left: 0;
+}
+/* line 37, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:first-child li:nth-child(1) {
+  width: 130px;
+  height: 50px;
+  background-image: url("../img/nav0.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 41, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:first-child li:nth-child(1):hover {
+  background-image: url("../img/nav0.png");
+  background-position: -131px 0;
+  background-repeat: no-repeat;
+}
+/* line 43, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:first-child li:nth-child(2) {
+  width: 140px;
+  height: 50px;
+  background-image: url("../img/nav1.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 47, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:first-child li:nth-child(2):hover {
+  background-image: url("../img/nav1.png");
+  background-position: -139px 0;
+  background-repeat: no-repeat;
+}
+/* line 49, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:last-child {
+  right: 0;
+}
+/* line 51, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:last-child li:nth-child(1) {
+  width: 137px;
+  height: 49px;
+  background-image: url("../img/nav2.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 55, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:last-child li:nth-child(1):hover {
+  background-image: url("../img/nav2.png");
+  background-position: -137px 0;
+  background-repeat: no-repeat;
+}
+/* line 57, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:last-child li:nth-child(2) {
+  width: 133px;
+  height: 49px;
+  background-image: url("../img/nav3.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 61, ../sass/_main.sass */
+.wrapper .kvSec .head .menu ul:last-child li:nth-child(2):hover {
+  background-image: url("../img/nav3.png");
+  background-position: -133px 0;
+  background-repeat: no-repeat;
+}
+/* line 63, ../sass/_main.sass */
+.wrapper .kvSec .head .menu li {
+  display: inline-block;
+  cursor: pointer;
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: transform 0.1s 0s linear;
+  -moz-transition: transform 0.1s 0s method;
+  -ms-transition: transform 0.1s 0s linear;
+  -o-transition: transform 0.1s 0s linear;
+  transition: transform 0.1s 0s linear;
+}
+/* line 68, ../sass/_main.sass */
+.wrapper .kvSec .head .music {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
+/* line 72, ../sass/_main.sass */
+.wrapper .kvSec .head .music div {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  cursor: pointer;
+}
+/* line 77, ../sass/_main.sass */
+.wrapper .kvSec .head .fbst {
+  position: absolute;
+  top: 37px;
+  right: 150px;
+  cursor: pointer;
+}
+/* line 82, ../sass/_main.sass */
+.wrapper .kvSec .head .fbsp {
+  width: 34px;
+  height: 35px;
+  background-image: url("../img/fbsp.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 31px;
+  right: 109px;
+  cursor: pointer;
+}
+/* line 90, ../sass/_main.sass */
+.wrapper .kvSec .head .fbsp:hover {
+  background-position: -35px;
+}
+/* line 92, ../sass/_main.sass */
+.wrapper .kvSec .middle {
+  width: 100%;
+  height: 602px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #f2d719;
+}
+/* line 99, ../sass/_main.sass */
+.wrapper .kvSec .middle .bgBox {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-size: 0;
+}
+/* line 106, ../sass/_main.sass */
+.wrapper .kvSec .middle .bgBox .kvbg {
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+  font-size: 0;
+  display: none;
+}
+/* line 113, ../sass/_main.sass */
+.wrapper .kvSec .middle .bh1 {
+  position: absolute;
+  top: -230px;
+  left: 390px;
+}
+/* line 117, ../sass/_main.sass */
+.wrapper .kvSec .middle .bh2 {
+  position: absolute;
+  top: -450px;
+  left: 471px;
+}
+/* line 121, ../sass/_main.sass */
+.wrapper .kvSec .middle .lh {
+  position: absolute;
+  top: 100px;
+  left: 358px;
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: all 0.3s 0s linear;
+  -moz-transition: all 0.3s 0s method;
+  -ms-transition: all 0.3s 0s linear;
+  -o-transition: all 0.3s 0s linear;
+  transition: all 0.3s 0s linear;
+}
+/* line 127, ../sass/_main.sass */
+.wrapper .kvSec .middle .pd2 {
+  position: absolute;
+  top: 163px;
+  left: 327px;
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+/* line 133, ../sass/_main.sass */
+.wrapper .kvSec .middle .pd2 img {
+  width: 100%;
+}
+/* line 135, ../sass/_main.sass */
+.wrapper .kvSec .middle .pd1 {
+  position: absolute;
+  top: 163px;
+  left: 327px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s 0.7s linear;
+  -moz-transition: all 0.3s 0.7s method;
+  -ms-transition: all 0.3s 0.7s linear;
+  -o-transition: all 0.3s 0.7s linear;
+  transition: all 0.3s 0.7s linear;
+}
+/* line 142, ../sass/_main.sass */
+.wrapper .kvSec .middle .pd1 img {
+  width: 100%;
+}
+/* line 144, ../sass/_main.sass */
+.wrapper .kvSec .middle .hdis {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 173px;
+  left: 63px;
+  -webkit-transition: all 0.3s 0.7s linear;
+  -moz-transition: all 0.3s 0.7s method;
+  -ms-transition: all 0.3s 0.7s linear;
+  -o-transition: all 0.3s 0.7s linear;
+  transition: all 0.3s 0.7s linear;
+}
+/* line 151, ../sass/_main.sass */
+.wrapper .kvSec .middle .hand {
+  width: 556px;
+  height: 393px;
+  background-image: url("../img/hand.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -360px;
+  right: -350px;
+  -webkit-transition: all 0.3s 1.7s linear;
+  -moz-transition: all 0.3s 1.7s method;
+  -ms-transition: all 0.3s 1.7s linear;
+  -o-transition: all 0.3s 1.7s linear;
+  transition: all 0.3s 1.7s linear;
+}
+/* line 159, ../sass/_main.sass */
+.wrapper .kvSec .middle .uploadbtn {
+  position: absolute;
+  top: 240px;
+  right: 142px;
+  cursor: pointer;
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: all 0.3s 2.5s linear;
+  -moz-transition: all 0.3s 2.5s method;
+  -ms-transition: all 0.3s 2.5s linear;
+  -o-transition: all 0.3s 2.5s linear;
+  transition: all 0.3s 2.5s linear;
+  cursor: url(../img/cursor.png), pointer;
+}
+/* line 167, ../sass/_main.sass */
+.wrapper .kvSec .middle .man {
+  position: absolute;
+  top: 50px;
+  right: -15px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.7s 1s linear;
+  -moz-transition: all 0.7s 1s method;
+  -ms-transition: all 0.7s 1s linear;
+  -o-transition: all 0.7s 1s linear;
+  transition: all 0.7s 1s linear;
+}
+/* line 174, ../sass/_main.sass */
+.wrapper .kvSec .middle .feman {
+  position: absolute;
+  top: 232px;
+  left: -70px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.7s 1.5s linear;
+  -moz-transition: all 0.7s 1.5s method;
+  -ms-transition: all 0.7s 1.5s linear;
+  -o-transition: all 0.7s 1.5s linear;
+  transition: all 0.7s 1.5s linear;
+}
+/* line 181, ../sass/_main.sass */
+.wrapper .kvSec .middle .smoke1 {
+  position: absolute;
+  top: 365px;
+  left: 668px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 187, ../sass/_main.sass */
+.wrapper .kvSec .middle .smoke2 {
+  position: absolute;
+  top: 184px;
+  left: 678px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 193, ../sass/_main.sass */
+.wrapper .kvSec .middle .sb1 {
+  position: absolute;
+  top: -250px;
+  left: -37px;
+}
+/* line 197, ../sass/_main.sass */
+.wrapper .kvSec .middle .sb2 {
+  position: absolute;
+  top: -210px;
+  left: -220px;
+}
+/* line 201, ../sass/_main.sass */
+.wrapper .kvSec .middle .sb3 {
+  position: absolute;
+  top: -200px;
+  right: -156px;
+}
+/* line 205, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+/* line 209, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 .storytit {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+}
+/* line 213, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 .storytit2 {
+  position: absolute;
+  bottom: 36px;
+  left: 326px;
+}
+/* line 217, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 .storytit3 {
+  position: absolute;
+  bottom: 72px;
+  left: 569px;
+}
+/* line 221, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 .time {
+  width: 82px;
+  height: 40px;
+  background-image: url("../img/time.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 21px;
+  left: 398px;
+  cursor: pointer;
+}
+/* line 229, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 .rate {
+  width: 82px;
+  height: 40px;
+  background-image: url("../img/rate.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 21px;
+  left: 492px;
+  cursor: pointer;
+}
+/* line 237, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 .rate:hover, .wrapper .kvSec .middle .story1 .time:hover {
+  background-position: -82px 0;
+}
+/* line 239, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 .updaterbg {
+  position: absolute;
+  bottom: 21px;
+  left: 588px;
+}
+/* line 243, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 .updater {
+  position: absolute;
+  bottom: 30px;
+  left: 595px;
+  width: 285px;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+/* line 252, ../sass/_main.sass */
+.wrapper .kvSec .middle .story1 .searchbtn {
+  position: absolute;
+  bottom: 8px;
+  left: 900px;
+  cursor: pointer;
+}
+/* line 257, ../sass/_main.sass */
+.wrapper .content {
+  padding-top: 1px;
+  width: 1000px;
+  height: 100%;
+  position: relative;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: -1px;
+}
+/* line 264, ../sass/_main.sass */
+.wrapper .story {
+  position: relative;
+  background-color: #000;
+  background-image: url("../img/storybg.gif");
+  background-position: 0 0;
+  background-repeat: repeat;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1px;
+}
+/* line 271, ../sass/_main.sass */
+.wrapper .story .line {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+/* line 275, ../sass/_main.sass */
+.wrapper .story .set {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 357px;
+  height: 357px;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 37px;
+  border-top: 13px solid #000;
+  border-bottom: 10px solid #000;
+}
+/* line 290, ../sass/_main.sass */
+.wrapper .story .set .pic {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 301, ../sass/_main.sass */
+.wrapper .story .set .votes {
+  position: absolute;
+  top: -37px;
+  left: 15px;
+}
+/* line 307, ../sass/_main.sass */
+.wrapper .story .set .picHover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -3px;
+  overflow: hidden;
+}
+/* line 313, ../sass/_main.sass */
+.wrapper .story .set .picHover .picHoverset {
+  position: relative;
+  bottom: -80px;
+  -webkit-transition: all 0.1s 0s linear;
+  -moz-transition: all 0.1s 0s method;
+  -ms-transition: all 0.1s 0s linear;
+  -o-transition: all 0.1s 0s linear;
+  transition: all 0.1s 0s linear;
+}
+/* line 317, ../sass/_main.sass */
+.wrapper .story .set .picHover .picHoverset .pn {
+  position: absolute;
+  top: 22px;
+  left: 70px;
+  color: #c86255;
+  font-weight: normal;
+  font-size: 17px;
+  font-family: "微軟正黑體";
+  line-height: 20px;
+}
+/* line 323, ../sass/_main.sass */
+.wrapper .story .set .picHover .picHoverset .pd {
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  color: #000;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "微軟正黑體";
+  line-height: 22px;
+  width: 211px;
+  height: 21px;
+  overflow: hidden;
+  text-align: left;
+}
+/* line 333, ../sass/_main.sass */
+.wrapper .story .set .more {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin-bottom: -6px;
+  cursor: pointer;
+}
+/* line 339, ../sass/_main.sass */
+.wrapper .story .set:hover > .picHover > .picHoverset {
+  bottom: 0;
+}
+/* line 341, ../sass/_main.sass */
+.wrapper .story .set:hover > .pic {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+/* line 344, ../sass/_main.sass */
+.wrapper .footer {
+  width: 100%;
+  background-color: #000;
+  height: 40px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  line-height: 40px;
+  position: relative;
+  color: #808080;
+  text-align: center;
+}
+/* line 352, ../sass/_main.sass */
+.wrapper .footer .topBox {
+  display: inline-block;
+  bottom: 0;
+  line-height: 0;
+}
+/* line 356, ../sass/_main.sass */
+.wrapper .footer .top {
+  position: absolute;
+  font-size: 0;
+  bottom: 0;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* line 362, ../sass/_main.sass */
+.cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+/* line 369, ../sass/_main.sass */
+.cover .coverbg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* line 376, ../sass/_main.sass */
+.cover .openpic {
+  width: 722px;
+  height: 549px;
+  background-image: url("../img/openpic.gif");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+/* line 387, ../sass/_main.sass */
+.cover .openpic .openpicP {
+  width: 275px;
+  height: 275px;
+  overflow: hidden;
+  background-image: url("");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 65px;
+  left: 49px;
+}
+/* line 396, ../sass/_main.sass */
+.cover .openpic .openpicP img {
+  width: 100%;
+}
+/* line 398, ../sass/_main.sass */
+.cover .openpic .openpicV {
+  position: absolute;
+  top: 24px;
+  left: 70px;
+}
+/* line 404, ../sass/_main.sass */
+.cover .openpic .openpicN {
+  position: absolute;
+  top: 18px;
+  left: 305px;
+}
+/* line 408, ../sass/_main.sass */
+.cover .openpic .openpicN span {
+  position: absolute;
+  left: 70px;
+  top: 113px;
+  color: #c86255;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "微軟正黑體";
+  line-height: 20px;
+}
+/* line 414, ../sass/_main.sass */
+.cover .openpic .openpicD {
+  position: absolute;
+  top: 177px;
+  left: 360px;
+  width: 314px;
+  height: 160px;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  line-height: 20px;
+}
+/* line 422, ../sass/_main.sass */
+.cover .openpic .radioset {
+  position: absolute;
+  bottom: 179px;
+  left: 160px;
+}
+/* line 426, ../sass/_main.sass */
+.cover .openpic .radioset input {
+  width: 25px;
+  height: 25px;
+}
+/* line 429, ../sass/_main.sass */
+.cover .openpic .radioset #onep {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 433, ../sass/_main.sass */
+.cover .openpic .radioset #twop {
+  position: absolute;
+  left: 126px;
+  top: 0;
+}
+/* line 437, ../sass/_main.sass */
+.cover .openpic .radioset #threep {
+  position: absolute;
+  left: 251px;
+  top: 0;
+}
+/* line 442, ../sass/_main.sass */
+.cover .openpic .openpicA {
+  position: absolute;
+}
+/* line 444, ../sass/_main.sass */
+.cover .openpic .openpicS {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+/* line 451, ../sass/_main.sass */
+.cover .updatepic {
+  width: 722px;
+  height: 529px;
+  background-image: url("../img/uploadpic.gif");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+/* line 462, ../sass/_main.sass */
+.cover .updatepic .updatepicP {
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  background-image: url("");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 138px;
+  left: 53px;
+}
+/* line 471, ../sass/_main.sass */
+.cover .updatepic .preinstall {
+  position: absolute;
+  bottom: 76px;
+  left: 50%;
+  margin: -58px;
+  cursor: pointer;
+}
+/* line 477, ../sass/_main.sass */
+.cover .updatepic .uptit {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+/* line 481, ../sass/_main.sass */
+.cover .updatepic .fbpbtn {
+  position: absolute;
+  bottom: 42px;
+  left: 64px;
+  cursor: pointer;
+}
+/* line 486, ../sass/_main.sass */
+.cover .updatepic .localbtn {
+  position: absolute;
+  bottom: 42px;
+  left: 194px;
+}
+/* line 490, ../sass/_main.sass */
+.cover .updatepic .updatepicD {
+  resize: none;
+  width: 295px;
+  height: 250px;
+  position: absolute;
+  top: 136px;
+  left: 374px;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  line-height: 22px;
+}
+/* line 500, ../sass/_main.sass */
+.cover .updatepic #readRule {
+  position: absolute;
+  bottom: 91px;
+  right: 326px;
+  width: 20px;
+  height: 20px;
+}
+/* line 506, ../sass/_main.sass */
+.cover .updatepic .updatepicA {
+  position: absolute;
+  bottom: 22px;
+  right: 142px;
+}
+/* line 510, ../sass/_main.sass */
+.cover .updatepic .updatepicS {
+  position: absolute;
+  bottom: 22px;
+  right: 142px;
+  cursor: pointer;
+}
+/* line 515, ../sass/_main.sass */
+.cover .updatepic .eventRule {
+  position: absolute;
+  bottom: 94px;
+  right: 157px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  line-height: 22px;
+  color: #000;
+  cursor: pointer;
+  width: 64px;
+  height: 22px;
+}
+/* line 524, ../sass/_main.sass */
+.cover .updatepic .fbalbum {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/fbalbum.gif");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  display: none;
+}
+/* line 532, ../sass/_main.sass */
+.cover .updatepic .fbalbum .albums {
+  width: 105px;
+  height: 350px;
+  position: absolute;
+  left: 42px;
+  top: 98px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* line 540, ../sass/_main.sass */
+.cover .updatepic .fbalbum .albums .aset {
+  width: 100%;
+  height: 106px;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+/* line 547, ../sass/_main.sass */
+.cover .updatepic .fbalbum .albums .aset:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 550, ../sass/_main.sass */
+.cover .updatepic .fbalbum .albums .aset .acover {
+  width: 70px;
+  height: 70px;
+  background-image: url("");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* line 556, ../sass/_main.sass */
+.cover .updatepic .fbalbum .albums .aset .aname {
+  width: 100%;
+  height: 24px;
+  overflow: hidden;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/* line 562, ../sass/_main.sass */
+.cover .updatepic .fbalbum .pics {
+  width: 520px;
+  height: 350px;
+  position: absolute;
+  left: 177px;
+  top: 98px;
+  clear: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* line 571, ../sass/_main.sass */
+.cover .updatepic .fbalbum .pics .picBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 575, ../sass/_main.sass */
+.cover .updatepic .fbalbum .pics .pset {
+  width: 118px;
+  height: 118px;
+  background-image: url("");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  float: left;
+  margin-top: 7px;
+  margin-right: 7px;
+  margin-bottom: 0;
+  margin-left: 0;
+  cursor: pointer;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+/* line 586, ../sass/_main.sass */
+.cover .updatepic .fbalbum .pics .pset:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 589, ../sass/_main.sass */
+.cover .updatepic .fbalbum .fbalbumS {
+  position: absolute;
+  left: 373px;
+  bottom: 14px;
+  cursor: pointer;
+}
+/* line 594, ../sass/_main.sass */
+.cover .updatepic .updatepicPloading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  line-height: 530px;
+  display: none;
+}
+/* line 606, ../sass/_main.sass */
+.cover .pages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+  width: 422px;
+  height: 209px;
+  background-image: url("../img/pages.gif");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 617, ../sass/_main.sass */
+.cover .pages .fblike {
+  position: absolute;
+  left: 60px;
+  top: 110px;
+}
+/* line 621, ../sass/_main.sass */
+.cover .pages .alreadyjoin {
+  width: 95px;
+  height: 22px;
+  position: absolute;
+  right: 22px;
+  bottom: 17px;
+  cursor: pointer;
+}
+/* line 630, ../sass/_main.sass */
+.cover .persondata, .cover .persondata2 {
+  width: 460px;
+  height: 417px;
+  background-image: url("../img/persondata.gif");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+/* line 641, ../sass/_main.sass */
+.cover .persondata .q-text2, .cover .persondata .q-text3, .cover .persondata2 .q-text2, .cover .persondata2 .q-text3 {
+  width: 286px;
+  height: 125px;
+  position: absolute;
+  top: 129px;
+  left: 96px;
+}
+/* line 647, ../sass/_main.sass */
+.cover .persondata .q-text2 .textstyle, .cover .persondata .q-text3 .textstyle, .cover .persondata2 .q-text2 .textstyle, .cover .persondata2 .q-text3 .textstyle {
+  width: 100%;
+  height: 34px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 9px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  line-height: 22px;
+}
+/* line 655, ../sass/_main.sass */
+.cover .persondata .q-text2 #readRule2, .cover .persondata .q-text2 #readRule2_2, .cover .persondata .q-text3 #readRule2, .cover .persondata .q-text3 #readRule2_2, .cover .persondata2 .q-text2 #readRule2, .cover .persondata2 .q-text2 #readRule2_2, .cover .persondata2 .q-text3 #readRule2, .cover .persondata2 .q-text3 #readRule2_2 {
+  position: absolute;
+  bottom: -64px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+}
+/* line 661, ../sass/_main.sass */
+.cover .persondata .persondataA, .cover .persondata2 .persondataA {
+  position: absolute;
+  bottom: 90px;
+  right: 30px;
+}
+/* line 665, ../sass/_main.sass */
+.cover .persondata .persondataS, .cover .persondata2 .persondataS {
+  position: absolute;
+  bottom: 22px;
+  left: 160px;
+  cursor: pointer;
+}
+/* line 670, ../sass/_main.sass */
+.cover .persondata .Privicy, .cover .persondata2 .Privicy {
+  position: absolute;
+  bottom: 104px;
+  left: 231px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  line-height: 22px;
+  color: #000;
+  cursor: pointer;
+  width: 90px;
+  height: 22px;
+}
+/* line 681, ../sass/_main.sass */
+.cover .persondata2 {
+  background-image: url("../img/persondata2.gif");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/*rule page */
+/* line 684, ../sass/_main.sass */
+.wrapper_r {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 689, ../sass/_main.sass */
+.wrapper_r .kvSec {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: #f2d719;
+}
+/* line 696, ../sass/_main.sass */
+.wrapper_r .kvSec .head {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 138px;
+  background-image: url("../img/headbg.gif");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+/* line 702, ../sass/_main.sass */
+.wrapper_r .kvSec .head .logo {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  cursor: pointer;
+}
+/* line 706, ../sass/_main.sass */
+.wrapper_r .kvSec .head .logo img {
+  width: 180px;
+  height: 51px;
+}
+/* line 710, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu {
+  width: 814px;
+  position: relative;
+  margin-top: 75px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+/* line 714, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul {
+  position: absolute;
+  top: 0;
+}
+/* line 717, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:first-child {
+  left: 0;
+}
+/* line 719, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:first-child li:nth-child(1) {
+  width: 130px;
+  height: 50px;
+  background-image: url("../img/nav0.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 723, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:first-child li:nth-child(1):hover {
+  background-image: url("../img/nav0.png");
+  background-position: -131px 0;
+  background-repeat: no-repeat;
+}
+/* line 725, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:first-child li:nth-child(2) {
+  width: 140px;
+  height: 50px;
+  background-image: url("../img/nav1.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 729, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:first-child li:nth-child(2):hover {
+  background-image: url("../img/nav1.png");
+  background-position: -139px 0;
+  background-repeat: no-repeat;
+}
+/* line 731, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:last-child {
+  right: 0;
+}
+/* line 733, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:last-child li:nth-child(1) {
+  width: 137px;
+  height: 49px;
+  background-image: url("../img/nav2.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 737, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:last-child li:nth-child(1):hover {
+  background-image: url("../img/nav2.png");
+  background-position: -137px 0;
+  background-repeat: no-repeat;
+}
+/* line 739, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:last-child li:nth-child(2) {
+  width: 133px;
+  height: 49px;
+  background-image: url("../img/nav3.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 743, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu ul:last-child li:nth-child(2):hover {
+  background-image: url("../img/nav3.png");
+  background-position: -133px 0;
+  background-repeat: no-repeat;
+}
+/* line 745, ../sass/_main.sass */
+.wrapper_r .kvSec .head .menu li {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: transform 0.1s 0s linear;
+  -moz-transition: transform 0.1s 0s method;
+  -ms-transition: transform 0.1s 0s linear;
+  -o-transition: transform 0.1s 0s linear;
+  transition: transform 0.1s 0s linear;
+}
+/* line 750, ../sass/_main.sass */
+.wrapper_r .kvSec .middle {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #f2d719;
+}
+/* line 756, ../sass/_main.sass */
+.wrapper_r .kvSec .middle .bgBox {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-size: 0;
+}
+/* line 763, ../sass/_main.sass */
+.wrapper_r .kvSec .middle .bgBox .kvbg {
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+  font-size: 0;
+}
+/* line 769, ../sass/_main.sass */
+.wrapper_r .kvSec .middle .bh1 {
+  position: absolute;
+  top: -44px;
+  left: 390px;
+}
+/* line 773, ../sass/_main.sass */
+.wrapper_r .kvSec .middle .bh2 {
+  position: absolute;
+  top: -134px;
+  left: 471px;
+}
+/* line 777, ../sass/_main.sass */
+.wrapper_r .kvSec .middle .rulec {
+  position: relative;
+  margin: 100px auto 70px auto;
+  width: 885px;
+}
+/* line 781, ../sass/_main.sass */
+.wrapper_r .content {
+  padding-top: 1px;
+  width: 1000px;
+  height: 100%;
+  position: relative;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: -1px;
+}
+/* line 789, ../sass/_main.sass */
+.wrapper_r .footer {
+  width: 100%;
+  background-color: #000;
+  height: 40px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  line-height: 40px;
+  position: relative;
+  color: #808080;
+  text-align: center;
+}
+
+/*ticket page */
+/* line 799, ../sass/_main.sass */
+.wrapper_t {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 805, ../sass/_main.sass */
+.wrapper_t .kvSec {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: #f2d719;
+}
+/* line 813, ../sass/_main.sass */
+.wrapper_t .kvSec .head {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 138px;
+  background-image: url("../img/headbg.gif");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+/* line 819, ../sass/_main.sass */
+.wrapper_t .kvSec .head .logo {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  cursor: pointer;
+}
+/* line 823, ../sass/_main.sass */
+.wrapper_t .kvSec .head .logo img {
+  width: 180px;
+  height: 51px;
+}
+/* line 827, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu {
+  width: 814px;
+  position: relative;
+  margin-top: 75px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+/* line 831, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul {
+  position: absolute;
+  top: 0;
+}
+/* line 834, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:first-child {
+  left: 0;
+}
+/* line 836, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:first-child li:nth-child(1) {
+  width: 130px;
+  height: 50px;
+  background-image: url("../img/nav0.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 840, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:first-child li:nth-child(1):hover {
+  background-image: url("../img/nav0.png");
+  background-position: -131px 0;
+  background-repeat: no-repeat;
+}
+/* line 842, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:first-child li:nth-child(2) {
+  width: 140px;
+  height: 50px;
+  background-image: url("../img/nav1.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 846, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:first-child li:nth-child(2):hover {
+  background-image: url("../img/nav1.png");
+  background-position: -139px 0;
+  background-repeat: no-repeat;
+}
+/* line 848, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:last-child {
+  right: 0;
+}
+/* line 850, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:last-child li:nth-child(1) {
+  width: 137px;
+  height: 49px;
+  background-image: url("../img/nav2.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 854, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:last-child li:nth-child(1):hover {
+  background-image: url("../img/nav2.png");
+  background-position: -137px 0;
+  background-repeat: no-repeat;
+}
+/* line 856, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:last-child li:nth-child(2) {
+  width: 133px;
+  height: 49px;
+  background-image: url("../img/nav3.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 860, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu ul:last-child li:nth-child(2):hover {
+  background-image: url("../img/nav3.png");
+  background-position: -133px 0;
+  background-repeat: no-repeat;
+}
+/* line 862, ../sass/_main.sass */
+.wrapper_t .kvSec .head .menu li {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: transform 0.1s 0s linear;
+  -moz-transition: transform 0.1s 0s method;
+  -ms-transition: transform 0.1s 0s linear;
+  -o-transition: transform 0.1s 0s linear;
+  transition: transform 0.1s 0s linear;
+}
+/* line 866, ../sass/_main.sass */
+.wrapper_t .kvSec .middle {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url("../img/kvbg.gif");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 874, ../sass/_main.sass */
+.wrapper_t .kvSec .middle .bh1 {
+  position: absolute;
+  top: -44px;
+  left: 390px;
+}
+/* line 878, ../sass/_main.sass */
+.wrapper_t .kvSec .middle .bh2 {
+  position: absolute;
+  top: -134px;
+  left: 471px;
+}
+/* line 882, ../sass/_main.sass */
+.wrapper_t .kvSec .middle .ticketc {
+  position: relative;
+  margin: 0 auto;
+  top: 15%;
+  width: 986px;
+}
+/* line 887, ../sass/_main.sass */
+.wrapper_t .kvSec .footer {
+  width: 100%;
+  background-color: #000;
+  height: 40px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  line-height: 40px;
+  position: absolute;
+  color: #808080;
+  bottom: 0;
+  text-align: center;
+}
+/* line 896, ../sass/_main.sass */
+.wrapper_t .content {
+  padding-top: 1px;
+  width: 1000px;
+  height: 100%;
+  position: relative;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: -1px;
+}
+
+/*privicy page */
+/* line 906, ../sass/_main.sass */
+.wrapper_p {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 912, ../sass/_main.sass */
+.wrapper_p .kvSec {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+/* line 918, ../sass/_main.sass */
+.wrapper_p .kvSec .head {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 138px;
+  background-image: url("../img/headbg.gif");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+/* line 924, ../sass/_main.sass */
+.wrapper_p .kvSec .head .logo {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  cursor: pointer;
+}
+/* line 928, ../sass/_main.sass */
+.wrapper_p .kvSec .head .logo img {
+  width: 180px;
+  height: 51px;
+}
+/* line 932, ../sass/_main.sass */
+.wrapper_p .kvSec .head .privacy_t {
+  position: relative;
+  left: 128px;
+  top: 78px;
+}
+/* line 936, ../sass/_main.sass */
+.wrapper_p .kvSec .middle {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 941, ../sass/_main.sass */
+.wrapper_p .kvSec .middle .privacy_content {
+  width: 710px;
+  position: relative;
+  margin: 0 auto;
+}
+/* line 945, ../sass/_main.sass */
+.wrapper_p .kvSec .footer {
+  width: 100%;
+  background-color: #000;
+  height: 40px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  line-height: 40px;
+  position: relative;
+  color: #808080;
+  bottom: 0;
+  text-align: center;
+}
+/* line 954, ../sass/_main.sass */
+.wrapper_p .content {
+  padding-top: 1px;
+  width: 1000px;
+  height: 100%;
+  position: relative;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: -1px;
+}
+
+/* line 962, ../sass/_main.sass */
+#pv {
+  cursor: pointer;
+}
+
+/* line 964, ../sass/_main.sass */
+#pv:hover {
+  color: #aaa;
+}
+
+@-moz-keyframes uploadbtn {
+  0% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  20% {
+    -moz-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+  40% {
+    -moz-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes uploadbtn {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  20% {
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+  40% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes uploadbtn {
+  0% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  20% {
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+  40% {
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-moz-keyframes smoke1 {
+  40% {
+    top: 365px;
+    left: 668px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  80% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 372px;
+    left: 660px;
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@-webkit-keyframes smoke1 {
+  40% {
+    top: 365px;
+    left: 668px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  80% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 372px;
+    left: 660px;
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@keyframes smoke1 {
+  40% {
+    top: 365px;
+    left: 668px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  80% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 372px;
+    left: 660px;
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@-moz-keyframes smoke2 {
+  60% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    top: 184px;
+    left: 678px;
+  }
+  80% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 177px;
+    left: 670px;
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@-webkit-keyframes smoke2 {
+  60% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    top: 184px;
+    left: 678px;
+  }
+  80% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 177px;
+    left: 670px;
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@keyframes smoke2 {
+  60% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    top: 184px;
+    left: 678px;
+  }
+  80% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 177px;
+    left: 670px;
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@-moz-keyframes openpicA {
+  0% {
+    bottom: 92px;
+    right: 100px;
+  }
+  20% {
+    bottom: 87px;
+    right: 90px;
+  }
+  100% {
+    bottom: 92px;
+    right: 100px;
+  }
+}
+@-webkit-keyframes openpicA {
+  0% {
+    bottom: 92px;
+    right: 100px;
+  }
+  20% {
+    bottom: 87px;
+    right: 90px;
+  }
+  100% {
+    bottom: 92px;
+    right: 100px;
+  }
+}
+@keyframes openpicA {
+  0% {
+    bottom: 92px;
+    right: 100px;
+  }
+  20% {
+    bottom: 87px;
+    right: 90px;
+  }
+  100% {
+    bottom: 92px;
+    right: 100px;
+  }
+}
+@-moz-keyframes updatepicA {
+  0% {
+    bottom: 6px;
+    right: 50px;
+  }
+  20% {
+    bottom: 10px;
+    right: 58px;
+  }
+  100% {
+    bottom: 6px;
+    right: 50px;
+  }
+}
+@-webkit-keyframes updatepicA {
+  0% {
+    bottom: 6px;
+    right: 50px;
+  }
+  20% {
+    bottom: 10px;
+    right: 58px;
+  }
+  100% {
+    bottom: 6px;
+    right: 50px;
+  }
+}
+@keyframes updatepicA {
+  0% {
+    bottom: 6px;
+    right: 50px;
+  }
+  20% {
+    bottom: 10px;
+    right: 58px;
+  }
+  100% {
+    bottom: 6px;
+    right: 50px;
+  }
+}
+@-moz-keyframes persondataA {
+  0% {
+    bottom: 98px;
+    right: 20px;
+  }
+  20% {
+    bottom: 90px;
+    right: 28px;
+  }
+  100% {
+    bottom: 98px;
+    right: 20px;
+  }
+}
+@-webkit-keyframes persondataA {
+  0% {
+    bottom: 98px;
+    right: 20px;
+  }
+  20% {
+    bottom: 90px;
+    right: 28px;
+  }
+  100% {
+    bottom: 98px;
+    right: 20px;
+  }
+}
+@keyframes persondataA {
+  0% {
+    bottom: 98px;
+    right: 20px;
+  }
+  20% {
+    bottom: 90px;
+    right: 28px;
+  }
+  100% {
+    bottom: 98px;
+    right: 20px;
+  }
+}
+@-moz-keyframes pd2 {
+  0% {
+    -moz-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+  70% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  80% {
+    -moz-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes pd2 {
+  0% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+  70% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  80% {
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes pd2 {
+  0% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+  70% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  80% {
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-moz-keyframes pd1 {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@-webkit-keyframes pd1 {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@keyframes pd1 {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@-moz-keyframes pd2a {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  50% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@-webkit-keyframes pd2a {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  50% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@keyframes pd2a {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  50% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@-moz-keyframes loading {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+@-webkit-keyframes loading {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+@keyframes loading {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+@-moz-keyframes hand {
+  to {
+    background-position: -2775px 0;
+  }
+}
+@-webkit-keyframes hand {
+  to {
+    background-position: -2775px 0;
+  }
+}
+@keyframes hand {
+  to {
+    background-position: -2775px 0;
+  }
+}
+/* line 109, ../sass/_animate.sass */
+.uploadbtn.animate {
+  -moz-animation: uploadbtn 1.7s infinite;
+  -webkit-animation: uploadbtn 1.7s infinite;
+  animation: uploadbtn 1.7s infinite;
+}
+
+/* line 111, ../sass/_animate.sass */
+.hand.animate {
+  -moz-animation: hand 1.7s steps(5, end) infinite;
+  -webkit-animation: hand 1.7s steps(5, end) infinite;
+  animation: hand 1.7s steps(5, end) infinite;
+}
+
+/* line 113, ../sass/_animate.sass */
+.smoke1.animate {
+  -moz-animation: smoke1 1.7s infinite;
+  -webkit-animation: smoke1 1.7s infinite;
+  animation: smoke1 1.7s infinite;
+}
+
+/* line 115, ../sass/_animate.sass */
+.smoke2.animate {
+  -moz-animation: smoke2 1.7s infinite;
+  -webkit-animation: smoke2 1.7s infinite;
+  animation: smoke2 1.7s infinite;
+}
+
+/* line 117, ../sass/_animate.sass */
+.openpicA.animate {
+  -moz-animation: openpicA 0.5s infinite;
+  -webkit-animation: openpicA 0.5s infinite;
+  animation: openpicA 0.5s infinite;
+}
+
+/* line 119, ../sass/_animate.sass */
+.updatepicA.animate {
+  -moz-animation: updatepicA 0.5s infinite;
+  -webkit-animation: updatepicA 0.5s infinite;
+  animation: updatepicA 0.5s infinite;
+}
+
+/* line 121, ../sass/_animate.sass */
+.persondata.persondataA.animate {
+  -moz-animation: persondataA 0.5s infinite;
+  -webkit-animation: persondataA 0.5s infinite;
+  animation: persondataA 0.5s infinite;
+}
+
+/* line 123, ../sass/_animate.sass */
+.persondata2.persondataA.animate {
+  -moz-animation: persondataA 0.5s infinite;
+  -webkit-animation: persondataA 0.5s infinite;
+  animation: persondataA 0.5s infinite;
+}
+
+/* line 125, ../sass/_animate.sass */
+.pd2#animate {
+  -moz-animation: pd2a 5s infinite;
+  -webkit-animation: pd2a 5s infinite;
+  animation: pd2a 5s infinite;
+}
+
+/* line 127, ../sass/_animate.sass */
+.pd1.animate {
+  -moz-animation: pd1 5s infinite;
+  -webkit-animation: pd1 5s infinite;
+  animation: pd1 5s infinite;
+}
+
+/* line 131, ../sass/_animate.sass */
+.wrapper .kvSec .head.animate {
+  top: 0;
+}
+/* line 134, ../sass/_animate.sass */
+.wrapper .kvSec .head.animate .menu li.showli {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 137, ../sass/_animate.sass */
+.wrapper .middle.animate .lh {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 139, ../sass/_animate.sass */
+.wrapper .middle.animate .pd2 {
+  -moz-animation: pd2 0.8s;
+  -webkit-animation: pd2 0.8s;
+  animation: pd2 0.8s;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 142, ../sass/_animate.sass */
+.wrapper .middle.animate .hand {
+  bottom: -10px;
+  right: -260px;
+}
+/* line 145, ../sass/_animate.sass */
+.wrapper .middle.animate .hdis {
+  height: 237px;
+}
+/* line 147, ../sass/_animate.sass */
+.wrapper .middle.animate .uploadbtn {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 149, ../sass/_animate.sass */
+.wrapper .middle.animate .man {
+  top: 50px;
+  right: 25px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 154, ../sass/_animate.sass */
+.wrapper .middle.animate .feman {
+  top: 210px;
+  left: -30px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie6" lang="zh-TW"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="zh-TW"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js lt-ie9 ie8" lang="zh-TW"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="zh-TW"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="zh-TW"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>"UNI water秋季瓶標徵選</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta name="viewport" content="width=980">
+        <!-- <meta name="viewport" content="width=device-width"> -->
+        <link href="css/all.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="./js/libs/html5shiv.min.js"></script>
+        <script type="text/javascript" src="./js/libs/device.min.js"></script>
+        <script type="text/javascript">
+        var a = 'h';
+        </script>
+    </head>
+    <body>
+    
+        <div class="loading"><div class="pic abs"></div></div>
+        <div class="wrapper">
+            <header class="site-header">
+                <h1 class="site-logo"><img src="images/logo.png"></h1>
+                <a href="#" class="btn-open"><img src="images/nav_btn_open.png"></a>
+                <div class="shadow"></div>
+            </header>
+            <!-- end of header-->       
+            <div class="u2">
+                <div class="color">
+                    <div class="cr cc" color="a84f55"><div></div><span style="color:#a84f55">甜酒紅 Marsala</span></div>
+                    <div class="cg cc" color="a3aa83"><div></div><span style="color:#a3aa83">香草綠 Dried Herb </span></div>
+                    <div class="cy cc" color="e8bb5a"><div></div><span style="color:#e8bb5a">橡木黃</br>Oak buff </span></div>
+                    <div class="cp cc" color="d0a1ba"><div></div><span style="color:#d0a1ba">喀什米爾粉 Cashmere</span></div>
+                    <div style="clear:left"></div>
+                </div>
+                <div class="strokes">
+                    <span>5</span>px
+                    <input id="thickness" type="range" name="points" min="5" max="15" value="5">
+                </div>
+                <canvas id="myCanvas" width="564" height="1106"></canvas>
+                <div class="draw_tool">
+                    <div class="undo"><img src="images/undo.png"></div>
+                    <div class="redo"><img src="images/redo.png"></div>
+                    <div class="clean"><img src="images/clean.png"></div>
+                    <div class="prev" style="opacity:0.5"><img src="images/prev.png"></div>
+                </div>
+                <form class="q-text" id="q-text" name="q-text">
+                    <input type="text" name="work_name" class="textstyle">
+                    <textarea type="text" name="work_dis" class="work_dis"></textarea>
+                </form>
+                <div class="draw_send" onclick="_upload.uploadi('upl');checkStep1form();"><img src="images/send_btn.png"></div>
+                <div class="u3"><img src="images/u3.png">
+                    <div class="rule_btn3" onclick="outlink('rule');"></div>
+                    <div class="draw_form3">
+                        <form class="q-text3" id="q-text3" name="q-text3">
+                            <input type="text" id="name" name="name" maxlength="20" class="textstyle"/>
+                            <input type="text" id="tel" name="tel" maxlength="10" class="textstyle"/>
+                            <input type="text" id="email" name="email" maxlength="50" class="textstyle"/>
+                            <input type="checkbox" name="readRule" id="readRule">
+                            <input type='hidden' name='img_name'>
+                            <input type='hidden' name='work_describe'>
+                            <input type='hidden' name='work_name'>
+                            <input type='hidden' name='upload_way'>
+                        </form>
+                    <div class="rule_btn4" onclick="outlink('rule')"></div>
+                    <div class="rule_btn5" onclick="outlink('rule')"></div>
+                    <div class="info_btn" onclick="checkStep1form3(); "><img src="images/send_btn.png"></div>
+                </div>
+                </div>
+            </div>
+            <div class="prev_cover">
+                <div class="prevbox">
+                    <div class="prevp"><img src=""></div>
+                </div>
+                <div class="prev_close"><img src="images/X.png"></div>
+            </div>
+            <!-- end of content-->
+
+            <footer class="site-footer">
+                <h2 class="logo-left"><img src="images/logo2.png"></h2>
+                <h2 class="logo-right"><img src="images/logo3.png"></h2>
+                <p>
+                    本網站內容均受著作權法保障，除非有特別聲明，<br>
+                    其著作權屬於統一企業(股)公司或其他內容提供者所有，<br>
+                    請勿將全部或部分圖文內容轉載於任何形式媒體<br>
+                    Copyright© 2014 Uni-President Enterprises Corp.,<br>
+                    All rights reserved.
+                </p>
+            </footer>
+            <!-- end of footer-->
+            
+        </div>
+        <!-- end of wrapper-->
+        
+        <nav class="site-nav">
+            <ul>
+                <li class="b1"><a href="index.html"></a></li>
+                <li class="b2"><a href="#" onclick="location.href='upload.html'"></a></li>
+                <li class="b3"><a href="#" onclick="location.href='list.html'";></a></li>
+                <li class="b4"><a href="rules.html"></a></li>
+            </ul>
+        </nav>
+        <!-- end of nav-->
+            
+        <script type="text/javascript" src="./js/libs/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="./js/libs/plugins.js"></script>
+        <script type="text/javascript" src="script/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="./js/libs/mat.GAUtil.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+        <script type="text/javascript" src="./js/check.js"></script>
+        <script type="text/javascript" src="./js/fb.js"></script>
+        <script type="text/javascript" src="./js/tracking.js"></script>
+    </body>
+    <script type="text/javascript">
+    var base64,cStep = -1;
+    var _upload = new upload();
+    _upload.drawing(); 
+function upload(){
+    var mousePressed = false;
+    var lastX, lastY;
+    var _self = this;
+    var ctx,start_draw = false;
+     $('.prev_close').on('click',function(){
+        $(this).parent().hide();
+    });
+
+    this.drawing = function(){
+        var myCanvas = document.getElementById('myCanvas');
+        ctx = document.getElementById('myCanvas').getContext("2d");
+        
+        $("#myCanvas").parents("*").css("overflow", "visible");
+        
+        getPointerEvent = function(event) {
+            return event.targetTouches ? event.targetTouches[0] : event;
+        }
+             setListener = function (elm,events,callback) {
+                    var eventsArray = events.split(' '),
+                        i = eventsArray.length;
+                    while(i--){
+                        elm.addEventListener( eventsArray[i], callback, false );
+                    }
+                };
+
+            setListener(myCanvas,'touchstart mousedown',function(e){
+                if(start_draw){
+                    e.preventDefault();
+                    var pointer = getPointerEvent(e);
+                    mousePressed = true;
+                    $('.prev').removeAttr('style');
+                    Draw(pointer.pageX - $(this).offset().left, pointer.pageY - $(this).offset().top, false);
+                }else{
+                    alert('請選擇一個筆刷顏色唷！');
+                }
+            });
+            // myCanvas.addEventListener('touchstart', function(e){
+                
+            // });
+            setListener(myCanvas,'touchmove mousemove',function(e){
+                e.preventDefault();
+                var pointer = getPointerEvent(e);
+                if (mousePressed) {
+                    Draw(pointer.pageX - $(this).offset().left, pointer.pageY - $(this).offset().top, true);
+                }
+            });
+            // myCanvas.addEventListener('touchmove', function(e){
+                
+            // });
+            setListener(myCanvas,'touchend mouseup touchcancel',function(e){
+                if (mousePressed) {
+                    mousePressed = false;
+                    cPush();
+                }
+            });
+            // myCanvas.addEventListener('touchend', function(e){
+                
+            // });
+            setListener(myCanvas,'touchleave mouseleave',function(e){
+                 if (mousePressed) {
+                    mousePressed = false;
+                    cPush();
+                }
+            });
+            // myCanvas.addEventListener('touchleave', function(e){
+               
+            // });
+        
+        drawImage();
+        $('.strokes input').on('input',function(){
+            t = $('#thickness').val();
+            ctx.lineWidth = t;  
+            $('.strokes span').html(t);
+        });
+         $('.strokes input').on('change',function(){
+            t = $('#thickness').val();
+            ctx.lineWidth = t;  
+            $('.strokes span').html(t);
+        });
+
+        $('.color .cc').click(function(){
+            if(start_draw && cStep > 0){
+                var r = confirm("顏色如改選，目前瓶標將重新設計喔！");
+                if (r == true) {
+                    drawImage(); 
+                } else {
+                    return false;
+                }   
+            }
+            start_draw = true;
+             $(this).css({'border-bottom': 5+'px solid #'+$(this).attr('color')})
+            // $(this).find('span').css({'color':'#'+$(this).attr('color')});
+            $(this).siblings().removeAttr('style');
+            $(this).parent().attr('color',$(this).attr('color'));
+            
+        });
+        $('.redo').on('click',cRedo);
+        $('.undo').on('click',cUndo);
+        $('.clean').on('click',drawImage);
+        $('.prev').on('click',function(){
+            if(cStep > 0){
+                $('.prevbox').css('background','url(images/p'+$('.color').attr('color')+'.png)');
+                $('.prevp img').attr('src',_self.uploadi('prev'));
+                $('.prev_cover').show(); 
+            }
+        });
+    }
+    this.uploadi = function(mod){
+        var type = "image/jpeg";
+        var dataurl =  document.getElementById("myCanvas").toDataURL(type, 1.0); 
+        //去掉 dataurl 開頭的 data:image/png;base64,
+        var regex = new RegExp('^data:'+type+';base64,');
+        // var base64 = dataurl.replace(regex,'');
+        switch (mod){
+            case 'prev':
+                return dataurl;
+            break;
+            case 'upl':
+                base64 = dataurl.replace(regex,'');
+            break;       
+        }
+    }
+    function drawImage() {
+        cPushArray.length = 0;
+        cStep = -1;
+        $('.color div').removeAttr('style');
+        $('.undo').css('opacity',0.5);
+        $('.redo').css('opacity',0.5);
+        ctx.rect(0,0,564,1106);
+        ctx.fillStyle="white";
+        ctx.fill();
+            cPush(); 
+    }
+    function Draw(x, y, isDown) {
+        if (isDown) {
+            ctx.beginPath();
+            ctx.strokeStyle = '#'+$('.color').attr('color');
+            ctx.lineWidth = $('#thickness').val(); 
+            ctx.lineJoin = "round";
+            ctx.moveTo(lastX, lastY);
+            ctx.lineTo(x, y);
+            ctx.closePath();
+            ctx.stroke();
+        }
+        lastX = x;
+        lastY = y;
+    }
+    var cPushArray = new Array();
+    function cPush() {
+        cStep++;
+        if (cStep < cPushArray.length) { cPushArray.length = cStep; }
+        if (cStep == cPushArray.length) { $('.redo').css('opacity',0.5); }
+        if (cStep > 0) {$('.undo').removeAttr('style');}
+        cPushArray.push(document.getElementById('myCanvas').toDataURL());
+       
+    }
+    function cUndo() {
+        if (cStep > 0) {
+            cStep--;
+            var canvasPic = new Image();
+            $('.redo').removeAttr('style');
+            canvasPic.src = cPushArray[cStep];
+            canvasPic.onload = function () { ctx.drawImage(canvasPic, 0, 0); }
+            if(cStep <= 0){
+                $('.undo').css('opacity',0.5);
+                $('.prev').css('opacity',0.5);
+            }
+        }
+    }
+    function cRedo() {
+        if (cStep < cPushArray.length-1) {
+            cStep++;
+            var canvasPic = new Image();
+            canvasPic.src = cPushArray[cStep];
+            canvasPic.onload = function () { ctx.drawImage(canvasPic, 0, 0); }
+            $('.undo,.prev').removeAttr('style');
+            if(cStep == cPushArray.length-1){$('.redo').css('opacity',0.5);}
+        }
+    }
+    
+
+}
+    </script>
+</html>
+

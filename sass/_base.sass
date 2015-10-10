@@ -1,0 +1,59 @@
+html
+	width: $full
+	height: $full
+body
+	width: $full
+	height: $full
+	min-width: 1000px
+	min-height: 600px
+	position: relative
+	font-family: Arial, "微軟正黑體"
+	background: #fff
+a
+	text-decorate: none
+/*img
+	width: $full*/
+.loading
+	position: fixed
+	width: $full
+	height: $full
+	left: 0
+	top: 0
+	z-index: 1
+	.loadingbg
+		position: absolute
+		width: $full
+		height: $full
+		left: 0
+		top: 0
+		background: #fff
+	.loadingicon
+		position: absolute
+		width: 640px
+		height: 50%
+		left: 0px
+		right: 0px
+		top: 0px
+		bottom: 0px
+		margin: auto
+		.loading_pd
+			position: relative
+			left: 53%
+			vertical-align: middle
+		.loading_t
+			position: absolute
+			left: 0
+			top: 48%
+		.loading_bar
+			position: absolute
+			left: 25%
+			top: 55.5%
+			width: 0%
+			overflow: hidden
+		.percent
+			@include Font(bold,18px,18px,'Arial')
+			position: absolute
+			color: #000
+			left: 44%
+			top: 55.5%
+			
